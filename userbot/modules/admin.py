@@ -5,7 +5,7 @@
 #
 # Recode by @mrismanaziz
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/cybercrime
 
 from asyncio import sleep
 
@@ -193,14 +193,14 @@ async def ban(bon):
         return await edit_or_reply(bon, NO_PERM)
     if reason:
         await man.edit(
-            r"\\**#Banned_User**//"
+            r"\\**#Tendang_User**//"
             f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
             f"**User ID:** `{str(user.id)}`\n"
             f"**Reason:** `{reason}`",
         )
     else:
         await man.edit(
-            f"\\\\**#Banned_User**//\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**User ID:** `{user.id}`\n**Action:** `Banned User by {me.first_name}`",
+            f"\\\\**#Tendang_User**//\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**User ID:** `{user.id}`\n**Action:** `Tendang User by {me.first_name}`",
         )
 
 
@@ -235,7 +235,7 @@ async def spider(spdr):
     admin = chat.admin_rights
     creator = chat.creator
     if not admin and not creator:
-        return await edit_or_reply(spdr, NO_ADMIN)
+        return await edit_or_reply(spdr, ADMIN)
     man = await edit_or_reply(spdr, "`Processing...`")
     user, reason = await get_user_from_event(spdr)
     if not user:
@@ -259,14 +259,14 @@ async def spider(spdr):
         await spdr.client(EditBannedRequest(spdr.chat_id, user.id, MUTE_RIGHTS))
         if reason:
             await man.edit(
-                r"\\**#Muted_User**//"
+                r"\\**#Gagu_User**//"
                 f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
-                f"**User ID:** `{user.id}`\n"
+                f"**User ID:** `{Gagu lu.id}`\n"
                 f"**Reason:** `{reason}`",
             )
         else:
             await man.edit(
-                r"\\**#Muted_User**//"
+                r"\\**#Gagu_User**//"
                 f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
                 f"**User ID:** `{user.id}`\n"
                 f"**Action:** `Mute by {self_user.first_name}`",
@@ -282,7 +282,7 @@ async def unmoot(unmot):
     admin = chat.admin_rights
     creator = chat.creator
     if not admin and not creator:
-        return await edit_delete(unmot, NO_ADMIN)
+        return await edit_delete(unmot, ADMIN)
     try:
         from userbot.modules.sql_helper.spam_mute_sql import unmute
     except AttributeError:
@@ -297,7 +297,7 @@ async def unmoot(unmot):
         return await edit_delete(unmot, "**ERROR! Pengguna Sudah Tidak Dibisukan.**")
     try:
         await unmot.client(EditBannedRequest(unmot.chat_id, user.id, UNBAN_RIGHTS))
-        await edit_delete(man, "**Berhasil Melakukan Unmute!**")
+        await edit_delete(man, "**Berhasil melepas lakban gagu!**")
     except UserIdInvalidError:
         return await edit_delete(man, "**Terjadi ERROR!**")
 
@@ -340,7 +340,7 @@ async def ungmoot(un_gmute):
     admin = chat.admin_rights
     creator = chat.creator
     if not admin and not creator:
-        return await edit_delete(un_gmute, NO_ADMIN)
+        return await edit_delete(un_gmute, ADMIN)
     try:
         from userbot.modules.sql_helper.gmute_sql import ungmute
     except AttributeError:
@@ -364,7 +364,7 @@ async def gspider(gspdr):
     admin = chat.admin_rights
     creator = chat.creator
     if not admin and not creator:
-        return await edit_delete(gspdr, NO_ADMIN)
+        return await edit_delete(gspdr, ADMIN)
     try:
         from userbot.modules.sql_helper.gmute_sql import gmute
     except AttributeError:
@@ -377,25 +377,25 @@ async def gspider(gspdr):
     if user.id == self_user.id:
         return await man.edit("**Tidak Bisa Membisukan Diri Sendiri..（>﹏<）**")
     if user.id in DEVS:
-        return await man.edit("**Gagal Global Mute, Dia Adalah Pembuat Saya 🤪**")
+        return await man.edit("**Gagal Global lakbat, salah orang **")
     if user.id in WHITELIST:
-        return await man.edit("**Gagal Mute, dia adalah admin @SharingUserbot 🤪**")
-    await man.edit("**Berhasil Membisukan Pengguna!**")
+        return await man.edit("**Gagal bos, dia adalah admin **")
+    await man.edit("**Berhasil melakban mulutnya!**")
     if gmute(user.id) is False:
         await edit_delete(gspdr, "**ERROR! Pengguna Sudah Dibisukan.**")
     elif reason:
         await man.edit(
-            r"\\**#GMuted_User**//"
+            r"\\**#Gagu_Sukur__User**//"
             f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
             f"**User ID:** `{user.id}`\n"
             f"**Reason:** `{reason}`",
         )
     else:
         await man.edit(
-            r"\\**#GMuted_User**//"
+            r"\\**#Gagu_Sukur_User**//"
             f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
             f"**User ID:** `{user.id}`\n"
-            f"**Action:** `Global Muted by {self_user.first_name}`",
+            f"**Action:** `Global Gagu {self_user.first_name}`",
         )
 
 
