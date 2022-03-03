@@ -23,9 +23,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 
 ## Tutorial
 
--  [Panduan Cara Memasang Man-Userbot](https://mrismanaziz.medium.com/cara-memasang-userbot-telegram-repo-man-userbot-deploy-di-heroku-c56d1f8b5537)
+-  [Panduan Cara Memasang Cyber-Userbot](https://cybercrime.medium.com/cara-memasang-userbot-telegram-repo-cyber-userbot-deploy-di-heroku-c56d1f8b5537)
 -  [Cara Setting Last.FM modules](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)
--  [List Variabel Man-Userbot](https://telegra.ph/List-Variabel-Heroku-untuk-Man-Userbot-09-22)
+-  [List Variabel cyber-Userbot](https://telegra.ph/List-Variabel-Heroku-untuk-cyber-Userbot-09-22)
 
 <details>
 <summary><b>🔗 String Session</b></summary>
@@ -66,26 +66,3 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 
 <h3 align="center">Klik Tombol di Bawah ini untuk Deploy di Heroku</h3>
 <p align="center"><a href="https://risman.vercel.app/deploy.html"><img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku" target="_blank"/></a></p>
-
-## Updates & Support
-
-Follow Channel [@Lunatic0de](https://t.me/Lunatic0de) untuk info Update bot dan Gabung Group [@SharingUserbot](https://t.me/SharingUserbot) untuk untuk diskusi, pelaporan bug, dan bantuan tentang Man-Userbot.
-
-#### Special Thanks To [Everyone](https://github.com/mrismanaziz/Man-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
--  [AdekMaulana](https://github.com/adekmaulana) : ProjectBish
--  [RaphielGang](https://github.com/RaphielGang) : Paperplane
--  [TeamUltroid](https://github.com/TeamUltroid/Ultroid) :  UltroidUserbot
--  [BianSepang](https://github.com/BianSepang/WeebProject) : WeebProject
--  [Sandy1709](https://github.com/sandy1709/catuserbot) : CatUserbot
--  [X_ImFine](https://github.com/ximfine) :  XBot-REMIX
--  [Risman](https://github.com/mrismanaziz/Man-Userbot) :  Man-Userbot
--  [Koala](https://github.com/ManusiaRakitan/Kampang-Bot) : Kampang-Bot
--  [Alvin](https://github.com/Zora24/Lord-Userbot) : Lord-Userbot
-
-## © Credits
--  [Laky-64](https://github.com/Laky-64) for [Py-Tgcalls](https://github.com/pytgcalls/pytgcalls)
--  [Lonami](https://github.com/LonamiWebs/) for [Telethon](https://github.com/LonamiWebs/Telethon)
--  [Risman](https://github.com/mrismanaziz) for [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)
-
-## License
-Licensed under [Raphielscape Public License](https://github.com/mrismanaziz/Man-Userbot/blob/Man-Userbot/LICENSE) - Version 1.d, February 2020
